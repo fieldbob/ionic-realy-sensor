@@ -1,0 +1,52 @@
+<ion-view view-title="온실 창문 개폐기">
+  <ion-content class="padding">
+
+    <div class="list card">
+      <div class="item item-divider item-stable">1동</div>
+      <div class="item item-body">
+        <div class="button-bar">
+          <a class="button button-assertive" ng-click="powerOn(1)">열기</a>
+          <a class="button button-calm" ng-click="powerIdle(1)">중립</a>
+		  <a class="button button-balanced" ng-click="powerOff(1)">닫기</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="list card">
+      <div class="item item-divider item-stable">2동</div>
+      <div class="item item-body">
+        <div class="button-bar">
+          <a class="button button-assertive" ng-click="powerOn(2)">열기</a>
+		  <a class="button button-calm" ng-click="powerIdle(2)">중립</a>
+          <a class="button button-balanced" ng-click="powerOff(2)">닫기</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="list card">
+      <div class="item item-divider item-stable">3동</div>
+      <div class="item item-body">
+        <div class="button-bar">
+          <a class="button button-assertive" ng-click="powerOn(3)">열기</a>
+		  <a class="button button-calm" ng-click="powerIdle(3)">중립</a>
+          <a class="button button-balanced" ng-click="powerOff(3)">닫기</a>
+        </div>
+      </div>
+    </div>
+	
+	 <div id="gauge">
+	 </div>
+    <div id="temperature">
+	</div>
+    <div id="loading">
+    <img src="img/loading.gif" />
+    </div>
+    <div id="period" hidden="hidden">
+        <input type="radio" id="dayperiod" name="period"><label for="dayperiod">최근 1일</label>
+        <input type="radio" id="weekperiod" name="period"><label for="weekperiod">최근 1주일</label>
+        <input type="radio" id="monthperiod" name="period"><label for="monthperiod">최근 1달</label>
+    </div>
+    <div id="periodtext">
+	</div>
+  </ion-content>
+</ion-view>
